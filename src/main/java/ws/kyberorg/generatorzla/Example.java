@@ -16,7 +16,7 @@ import java.io.FileOutputStream;
  * @author Alexander Muravya <asm@virtalab.net>
  * @since 1.0
  */
-public class Generator {
+public class Example {
 
     File file;
     BaseFont bf;

@@ -47,6 +47,7 @@ public class Main {
 
     public static void setFont() throws Exception {
         String fontLocation = "/usr/local/share/fonts/tahoma.ttf"; //you should add font to this location before run
+        //fontLocation = "tahoma.ttf"; //this works too at least in exec jar
         bf = BaseFont.createFont(fontLocation, BaseFont.IDENTITY_H , BaseFont.EMBEDDED);
         f_title = new Font(bf, 14 );
         f_text = new Font(bf);
