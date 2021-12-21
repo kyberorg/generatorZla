@@ -19,7 +19,7 @@
         <dependency>
             <groupId>com.itextpdf</groupId>
             <artifactId>itextpdf</artifactId>
-            <version>5.5.2</version>
+            <version>5.5.13.2</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -74,10 +74,9 @@
                         <phase>package</phase>
                         <configuration>
                             <target>
-                                <delete file="${project.basedir}/${release.directory}/*.jar" />
-                                <move file="${project.build.directory}/${project.artifactId}-${project.version}-jar-with-dependencies.jar"
-                                      tofile="${project.basedir}/${release.directory}/${project.artifactId}.jar" />
-                                <delete file="${project.build.directory}/${project.artifactId}-${project.version}.jar" />
+                                <delete file="${project.basedir}/${release.directory}/*.jar"/>
+                                <move file="${project.build.directory}/${project.artifactId}-${project.version}-jar-with-dependencies.jar" tofile="${project.basedir}/${release.directory}/${project.artifactId}.jar"/>
+                                <delete file="${project.build.directory}/${project.artifactId}-${project.version}.jar"/>
                             </target>
                         </configuration>
                         <goals>
